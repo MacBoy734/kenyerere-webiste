@@ -1,111 +1,128 @@
 <!---------- Meta HTML Starts -------->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>School Website</title>
-<link rel="stylesheet" href="style.css">
-<div class="top-header">
-    <div class="container"> 
-        <b>School Hours :  9:00 AM - 3:30 PM </b> 
-    
-    </div>
-  </div>
+  <title>kenyerere Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="./js/script.js" defer></script>
 </head>
+
 <body>
-<!---------- Meta HTML Ends -------->
 
-<!-------- LOGO AND MENU SECTION Starts ------->
-<div class="container"> 
-    <nav> 
-        <a href="#">HOME</a> 
-        <a href="#">ABOUT US</a>  
-        <a href="#">GALLERY</a>  
-        <a href="#">CONTACT US</a> 
-    </nav>
-</div>
-<!-------- LOGO AND MENU SECTION Ends ------->
-<div class="container">
-  <img src="images/logo" class="logo">
-  </div>
+  <div class="top-section">
+    <div class="top-header">
+      <div class="container">
+        <b>School Hours : 9:00 AM - 3:30 PM </b>
+      </div>
+    </div>
 
-<div class="slider"> 
-    <img src="images/image9.jpg"> 
-</div>
-
-<!-------- School NEWS SECTION Starts ------->
-
-<div class="news">
-    <div class="container"> 
-        
-      <b>School Motto : </b>
-      
-      <marquee>
-          DISCIPLINE.     INTEGRITY.     EXCELLENCE.
-      </marquee>
-    
+    <!-------- LOGO AND MENU SECTION Starts ------->
+    <div class="navbar">
+      <nav class="navItems">
+        <a href="#">HOME</a>
+        <a href="#about-us">ABOUT US</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#">CONTACT US</a>
+        <i class="fa-solid fa-bars" id="openMenu"></i>
+      </nav>
+      <!-- mobile menu -->
+      <nav class="mobile-menu hidden">
+        <a href="#">HOME</a>
+        <a href="#about-us">ABOUT US</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#">CONTACT US</a>
+        <i class="fa-solid fa-times" id="closeMenu"></i>
+      </nav>
     </div>
   </div>
-  
+
+  <div class="slider">
+    <img src="images/image9.jpg" alt="slider image">
+  </div>
+
+  <!-------- School NEWS SECTION Starts ------->
+
+  <div class="news">
+    <div class="container">
+
+      <b>School Motto : </b>
+
+      <marquee>
+        DISCIPLINE. INTEGRITY. EXCELLENCE.
+      </marquee>
+
+    </div>
+  </div>
+
   <!-------- School NEWS SECTION Ends ------->
   <!-------- Notice Board SECTION Starts ------->
-      
-      </div>
-      
-    </div>
+
   </div>
-  
+
+  </div>
+  </div>
+
   <!-------- Notice Board SECTION Ends ------->
 
   <!-------- About My School SECTION Starts ------->
 
-<div class="main-section">
+  <div class="main-section" id="about-us">
+    <h2 class="heading">About My School</h2>
     <div class="container about-us">
-          
-          <div>
-        
-            <h2 class="heading">About My School</h2>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.If you are going to use a passage.</p>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.If you are going to use a passage of anything embarrassing hidden in the middle of text Lorem ipsum. </p>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.If you are going to use a passage of a Lorem ipsum</p>
-            
-          </div>
-          
-          <img src="images/image5.jpeg">
-          
-     </div>
+
+      <div>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut elit tellus, luctus nec ullamcorper mattis,
+          pulvinar dapibus leo.If you are going to use a passage.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+          pulvinar dapibus leo.If you are going to use a passage of anything embarrassing hidden in the middle of text
+          Lorem ipsum. </p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.If you are going to use a passage of
+          a Lorem ipsum</p>
+
+      </div>
+
+      <img src="images/image5.jpeg" alt="image">
+
+    </div>
   </div>
-  
+
   <!-------- About My School SECTION Ends ------->
 
   <!-------- My School Topper SECTION Starts ------->
 
-<div class="main-section">
+  <div class="main-section">
     <div class="container">
-    
-        </li>
+
+      </li>
       </ul>
-      
+
     </div>
   </div>
-  
+
   <!-------- My School Topper SECTION Ends ------->
   <!-------- My School Facility SECTION Starts ------->
 
- <div class="main-section">
-    <div class="container">
-      
-      <h2 class="heading">My School Facility</h2>
-      
+  <div class="main-section">
+    <h2 class="heading">My School Facility</h2>
+    <div class="facilities">
       <div class="facility">
         <h2 class="heading">SCHOOL CLASS</h2>
         <div> <img src="images/image5.jpeg"> </div>
       </div>
-      
+
       <div class="facility">
         <h2 class="heading">SCHOOL PUPILS</h2>
         <div> <img src="images/image6.jpeg"> </div>
@@ -118,17 +135,17 @@
         <h2 class="heading">SCHOOL COMMITEE</h2>
         <div> <img src="images/image16.jpeg"> </div>
       </div>
-      
+
     </div>
-    
+
     <div class="container">
-      
+
       <marquee class="facility-list" direction="left" scrollamount="20">
-          <img src="images/image12.jpeg">
+        <img src="images/image12.jpeg">
       </marquee>
-    
-    </div> 
-    
+
+    </div>
+
   </div>
   <!-------- My School Facility SECTION Ends ------->
 
@@ -136,112 +153,106 @@
 
   <div class="main-section">
     <div class="container">
-        </div>
-      </div>
-      
     </div>
   </div>
-  
+
+  </div>
+  </div>
+
   <!-------- Testimonial SECTION Ends ------->
   <!-------- School Gallery SECTION Starts ------->
 
-<div class="main-section">
-    <div class="container gallery">
-          
-          <h2 class="heading">Our School Gallery</h2>
-          
-          <img src="images/image2.jpeg"> 
-          <img src="images/image3.jpeg">
-          <img src="images/image4.jpeg">
-          <img src="images/image11.jpeg">
-          <img src="images/image12.jpeg"> 
-          <img src="images/image13.jpeg"> 
-          <img src="images/image14.jpeg"> 
-          <img src="images/image16.jpeg"> 
-          <img src="images/image6.jpeg">
-          <img src="images/image7.jpeg">
-          <img src="images/image10.jpeg"> 
-          <img src="images/image17.jpeg"> 
+  <div class="main-section" id="gallery">
+    <div class="gallery">
+
+      <h2 class="heading">Our School Gallery</h2>
+
+      <div class="gallery-images">
+        <img src="images/image2.jpeg" alt="image">
+        <img src="images/image3.jpeg" alt="image">
+        <img src="images/image4.jpeg" alt="image">
+        <img src="images/image11.jpeg" alt="image">
+        <img src="images/image12.jpeg" alt="image">
+        <img src="images/image13.jpeg" alt="image">
+        <img src="images/image14.jpeg" alt="image">
+        <img src="images/image16.jpeg" alt="image">
+        <img src="images/image6.jpeg" alt="image">
+        <img src="images/image7.jpeg" alt="image">
+        <img src="images/image10.jpeg" alt="image">
+        <img src="images/image17.jpeg" alt="image">
       </div>
+
+    </div>
   </div>
-  
+
   <!-------- School Gallery SECTION Ends ------->
   <!-------- Footer SECTION Starts ------->
 
-<div class="footer">
+  <div class="footer">
 
     <div class="container">
+      <div class="footer-top">
+        <h2>We Create Champion's At the Right Time & Place</h2>
+      </div>
+    </div>
+
+    <div class="footer-links">
+
       <div class="footer-inner">
-        <div class="footer-top">
-          <h2>We Create Champion's At the Right Time & Place<br>
-          <span class="border-bottoms"></span> </div>
+        <h4>Quick Links</h4>
+        <div class="footer-menu">
+          <ul>
+            <li>Home</li>
+            <li>Course</li>
+            <li>About us</li>
+            <li>Training</li>
+            <li>Notice</li>
+            <li>Event</li>
+            <li>Blogging</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-inner"></div>
+
       <div class="footer-inner">
-  
-      </div>
-    </div>
-
-<div class="container">
-
-  <div class="footer-inner">
-    <h4>Quick Links</h4>
-    <div class="footer-menu">
-      <ul>
-        <li>Home</li>
-        <li>Course</li>
-        <li>About us</li>
-        <li>Training</li>
-        <li>Notice</li>
-        <li>Event</li>
-        <li>Blogging</li>
-        <li>Contact Us</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="footer-inner">
-    <h4>School Timing</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td>Mon - Fri..................</td>
-          <td>9:00 am - 3:30 pm</td>
-        </tr>
-        <tr>
-          <td>Saturday and Sunday</td>
-          <td>Closed</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  
-  <div class="footer-inner">
-    <h4>Contact Us</h4>
-    <div class="contact-info">
-      <p>> P.O Box 1452, KISII.</p>
-      <p> > +254 726 248 537</p>
-    </div>
-  </div>
-</div>
-<!-------- Footer SECTION Ends ------->
-<!-------- Copyright SECTION Starts ------->
-
-<div class="copyright">
-
-    <div class="container">
-    
-      <div class="footer-inner">@ All Copyrights By Kenyerere Junior Academy</div>
-      
-      <div class="footer-inner"> 
-          <a href="#">Privacy Policy |</a> 
-          <a href="#">Terms & Condition</a> 
+        <h4>School Timing</h4>
+        <table>
+          <tbody>
+            <tr>
+              <td>Mon - Fri..................</td>
+              <td>9:00 am - 3:30 pm</td>
+            </tr>
+            <tr>
+              <td>Saturday and Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      
+      <div class="footer-inner">
+        <h4>Contact Us</h4>
+        <div class="social-links">
+          <a href="#" class="social-link" title="our facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="social-link" title="our instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" title="our whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="social-link" title="our twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="contact-info">
+          <p>> P.O Box 1452, KISII.</p>
+          <p> > +254 726 248 537</p>
+        </div>
+      </div>
     </div>
-    
+    <!-------- Footer SECTION Ends ------->
+    <!-------- Copyright SECTION Starts ------->
+
+    <div class="copyright">
+      <p class="footer-inner">&copy; <span id="year"></span> All Copyrights By Kenyerere Junior Academy</p>
+    </div>
   </div>
-  
+
   <!-------- Copyright SECTION Ends ------->
-  
+</body>
+
+</html>
