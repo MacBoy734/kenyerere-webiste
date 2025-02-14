@@ -1,0 +1,275 @@
+/********** Common CSS Starts **********/  
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+html, body {
+	font-family Roboto, sans-serif, arial;
+	font-size:16px;
+	color: #fff;
+}
+.container {
+	width: 1050px;
+	margin:0px auto;
+	display:table;
+}
+/********** Common CSS Ends **********/
+
+/********** Top Header CSS Starts **********/  
+.top-header {
+    background: #FF5722;
+    padding: 10px;
+}
+.top-header a {
+    margin-left: 20px;
+	margin-right: 20px;
+    text-decoration: none;
+	color: #fff;
+}
+.top-header b{
+	float:right;
+}
+/********** Top Header CSS Ends **********/
+
+/********** Logo CSS Starts **********/  
+.logo {
+	height: 25px ;
+	stroke-width: 5px;
+}
+/********** Logo CSS Ends **********/
+
+
+/********** Menu/Nav CSS Starts **********/ 
+nav {
+	float: right;
+	padding:25px 0px;
+}
+nav a {
+	color: black;
+	text-decoration: none;
+	font-size:18px;
+	padding:2px 10px;
+	font-weight:500;
+}
+/********** Menu/Nav CSS Ends **********/
+
+.slider {
+	line-height:0px;
+}
+.slider img {
+	width:100%;
+}
+/********** School NEWS CSS Starts **********/  
+.news {
+	background:#FF5722;
+	padding: 6px;
+}
+.news b {
+	background: #fff;
+	color: red;
+	padding:10px;
+	font-size:20px;
+}
+.news marquee {
+	font-size:18px;
+	width: 80%;
+}
+/********** School NEWS CSS Ends **********/
+
+/********** Notice Board CSS Starts **********/  
+.main-section {
+	width: 100%;
+	float: left;
+	padding:130px 0px 130px 0px;
+ 	background:#FFF9C4;
+}
+.main-section:nth-child(odd){
+	background:#AED581;
+}
+.heading {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 70px;
+    color: black;
+    text-align: center;
+    position: relative;
+    font-family serif;
+}
+.heading:after {
+    content: '';
+    background: #FF5722;
+    height:3px;
+    width:80px;
+    position: absolute;
+    bottom: -11px;
+    right:45%;
+}
+.notice-board {
+    width: 88%;
+    margin-left: 6%;
+    background: #2a7f2e;
+    border: 10px solid #ffac88;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.notice-board li {
+    width: 100%;
+    float: left;
+    padding: 20px;
+}
+.notice-board li span{
+    background:#FF9800;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 12px;
+    margin-right: 10px;
+	position: relative;
+    top: -8px;
+}
+/********** Notice Board CSS Ends **********/
+/********** About My School CSS Starts **********/  
+.about-us div {
+	width:45%;
+	float:left;
+	line-height:30px;
+	font-size:18px;
+}
+.about-us h4 {
+    font-size: 18px;
+    color: red;
+    font-weight: 500;
+}
+.about-us p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    line-height: 23px;
+	color:black;
+}
+.about-us img {
+	width:40%;
+	float:left;
+}
+/********** About My School CSS Ends **********/
+
+/********** My School Topper CSS Starts **********/  
+ul.topper li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    padding:4px 2px 0px 2px ;
+}
+ul.topper li img{
+	width:100%;
+}
+ul.topper li div {
+    background: #FF5722;
+    text-align: center;
+    color: #fff;
+	padding:8px;
+}
+ul.topper li div p{
+	margin-bottom:5px;
+}
+/********** My School Topper CSS Ends **********/
+
+/********** My School Facility CSS Starts **********/  
+.facility {
+	width:24%;
+	margin-right:1%;
+	float: left;
+	background-color: #fff;
+	border:1px solid #FF5722;
+}
+.facility div{
+    padding: 10px;
+}
+.facility .heading {
+    padding:10px;
+    color: #fff;
+    background:#FF5722;
+    text-align: center;
+    font-size:18px;
+	font-weight:400;
+	margin-bottom: 10px;
+}
+.facility img {
+	width:100%;
+}
+.facility-list{
+	background:#fff; 
+	margin-top:30px;
+}
+.facility-list img{
+	height:150px;
+}
+/********** My School Facility CSS Ends **********/
+/********** School Gallery CSS Starts **********/  
+.gallery img {
+    width: 24%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    border: 7px double #66BB6A;
+    border-radius: 10px;
+}
+/********** School Gallery CSS Ends **********/
+
+/********** Footer CSS Starts **********/ 
+
+.footer {
+	background-color:#FF5722;
+	padding:40px 0px 0px 0px;
+	width:100%;
+	float:left;
+}
+.footer-inner{
+	width:33%;
+	float:left;
+	padding-bottom: 20px;
+}
+.footer h4 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.footer p {
+    font-size: 16px;
+    padding-bottom:6px;
+}
+.footer-menu ul {
+	padding: 0px;
+}
+.footer-menu li {
+	width:50%;
+	float: left;
+	list-style: none;
+}
+.footer-menu li a {
+	text-decoration: none;
+	border-right: 1px solid lightgrey;
+	padding: 2px 20px;
+	color: #111;
+}
+
+/********** Footer CSS Ends **********/
+
+/********** Copyright CSS Starts **********/ 
+
+.copyright {
+    border-top: 1px solid lightgrey;
+    padding-top: 30px;
+    width: 100%;
+    float: left;
+}
+.copyright a {
+	padding: 0px 4px;
+	text-decoration: none;
+	color: #fff;
+}
+
+/********** Copyright CSS Ends **********/
