@@ -44,6 +44,7 @@ p{
 .logo {
 	height: 30px;
 	stroke-width: 5px;
+	float: left;
 }
 
 /********** Logo CSS Ends **********/
@@ -75,9 +76,10 @@ nav a {
 }
 i.fa-bars{
 	color: black;
-	height: 10px;
-	width: 10px;
+	height: 15px;
+	width: 15px;
 	margin: 0 10px 0 15px;
+	font-weight: bolder;
 	float: right;
 }
 
@@ -406,7 +408,7 @@ ul.topper li div p {
 
 @media (max-width: 510px) {
 
-	.navbar .navItems a{
+	.navbar .navItems a, .navbar .navItems p{
 		display: none;
 	}
 	.news{
