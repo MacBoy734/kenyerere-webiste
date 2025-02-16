@@ -106,8 +106,8 @@ nav.navItems p>a:hover {
 
 i.fa-bars {
 	color: rgb(255, 255, 255);
-	height: 15px;
-	width: 15px;
+	height: 17px;
+	width: 17px;
 	margin: 0 10px 0 15px;
 	font-weight: bolder;
 	float: right;
@@ -467,13 +467,18 @@ ul.topper li div p {
 /* MEDIA QUERIES FOR BREAKPOINTS */
 
 @media (max-width: 510px) {
-
+    .navbar .navItems{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 19px 18px;
+	}
 	.navbar .navItems > a {
 		display: none;
 	}
 
 	nav p {
-		margin-bottom: -3%;
+		margin-bottom: unset;
 	}
 
 	nav.navItems p>a {
