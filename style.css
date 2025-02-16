@@ -7,23 +7,32 @@
 
 html,
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Merriweather', sans-serif !important;
 	overflow-x: hidden;
 	font-size: 16px;
 	color: #fff;
 	scroll-padding: 50px;
+	background-color: #131111;
 	scroll-behavior: smooth;
 }
 
-p{
-	font-family: 'Roboto', sans-serif;
-  }
-  h1, h2, h3{
-	font-family: 'Montserrat', sans-serif;
-  }
-  button{
-	font-family: 'Lato', sans-serif;
-  }
+p {
+	font-family: 'Lato', sans-serif !important;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+button {
+	font-family: 'Lato', sans-serif !important;
+}
+
+a {
+	text-decoration: none;
+}
 
 .container {
 	margin: 0px auto;
@@ -34,7 +43,7 @@ p{
 
 /********** Top Header CSS Starts **********/
 .top-header {
-	background: #FF5722;
+	background: #181818;
 	padding: 10px;
 }
 
@@ -51,7 +60,7 @@ p{
 
 
 /********** Menu/Nav CSS Starts **********/
-.top-section{
+.top-section {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -59,23 +68,44 @@ p{
 	height: auto;
 	z-index: 50;
 }
+
 nav {
 	float: right;
 	padding: 19px 30px;
-	background-color: white;
+	background-color: rgb(22, 22, 22);
 	width: 100%;
 }
 
-nav a {
-	color: black;
+nav.navItems>a {
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 	font-size: 18px;
 	padding: 2px 10px;
 	font-weight: 500;
+	transition: all 100ms ease-out;
 	float: right;
 }
-i.fa-bars{
-	color: black;
+
+nav a:hover {
+	color: #1c0dec;
+}
+
+nav p {
+	margin-bottom: -2%;
+}
+
+nav.navItems p > a {
+	color: rgb(20, 155, 189);
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+nav.navItems p > a:hover{
+	color: yellowgreen;
+}
+
+i.fa-bars {
+	color: rgb(255, 255, 255);
 	height: 15px;
 	width: 15px;
 	margin: 0 10px 0 15px;
@@ -83,21 +113,21 @@ i.fa-bars{
 	float: right;
 }
 
-i.fa-times{
+i.fa-times {
 	color: white;
 	font-size: 1.5em;
 	position: absolute;
 	top: 15px;
-	left: 15px;
+	right: 30px;
 }
 
-nav.mobile-menu{
+nav.mobile-menu {
 	position: fixed;
-	top:0;
-	right: 0;
+	top: 0;
+	left: 0;
 	height: 100vh;
 	width: 75%;
-	background-color: rgb(44, 43, 43);
+	background-color: #161616;
 	color: white;
 	z-index: 999;
 	display: flex;
@@ -109,12 +139,25 @@ nav.mobile-menu{
 	transition: transform 500ms ease-in;
 }
 
-nav.mobile-menu a{
+nav.mobile-menu a {
 	color: white;
 	font-size: 20px;
 }
-.hidden{
-	transform: translateX(100%);
+nav.mobile-menu a:hover{
+	color: #1c0dec;
+}
+nav.mobile-menu a::after{
+	content: '';
+	background-color: white;
+	height: 1px;
+	width: 100%;
+	opacity: 25%;
+	display: block;
+	margin-top: 10px;
+}
+
+.hidden {
+	transform: translateX(-100%);
 }
 
 /********** Menu/Nav CSS Ends **********/
@@ -131,21 +174,22 @@ nav.mobile-menu a{
 
 /********** School NEWS CSS Starts **********/
 .news {
-	background: #f0390b;
+	background: #161616;
 	padding: 18px;
 }
 
 .news b {
-	background: #fff;
-	color: red;
-	padding: 10px;
+	background: #ffffff;
+	color: rgb(0, 0, 0);
+	border-radius: .3em;
+	padding: 12px 35px;
 	font-size: 20px;
 }
 
 .news marquee {
 	font-size: 18px;
-	width: 80%;
-	margin-top: 10px;
+	width: 100%;
+	margin-top: 30px;
 }
 
 /********** School NEWS CSS Ends **********/
@@ -155,26 +199,25 @@ nav.mobile-menu a{
 	width: 100%;
 	float: left;
 	padding: 90px 0px 90px 0px;
-	background: #FFF9C4;
 }
 
 .main-section:nth-child(odd) {
-	background: #AED581;
+	background: #161616;
+	padding: 50px 0px 50px 0px;
 }
 
 .heading {
 	font-size: 35px;
 	font-weight: 500;
 	margin-bottom: 70px;
-	color: black;
+	color: rgb(255, 255, 255);
 	text-align: center;
 	position: relative;
-	font-family: serif;
 }
 
 .heading:after {
 	content: '';
-	background: #FF5722;
+	background: #ffffff;
 	height: 3px;
 	width: 9%;
 	position: absolute;
@@ -221,28 +264,28 @@ nav.mobile-menu a{
 	padding: 0 30px 0 30px;
 }
 
-.about-us h4 {
-	font-size: 18px;
-	color: red;
-	font-weight: 500;
+#about-us {
+	background-color: #161616;
 }
 
 .about-us p {
-	font-size: 16px;
+	font-size: 1.2em;
 	margin-bottom: 20px;
 	padding-right: 30px;
 	line-height: 23px;
-	color: black;
 }
 
 .about-us img {
 	width: 40%;
 	height: auto;
+	border-radius: .5em;
 	transition: transform 150ms ease-in;
 }
-.about-us img:hover{
+
+.about-us img:hover {
 	transform: scale(1.03);
 }
+
 /********** About My School CSS Ends **********/
 
 /********** My School Topper CSS Starts **********/
@@ -273,10 +316,16 @@ ul.topper li div p {
 /********** My School Topper CSS Ends **********/
 
 /********** My School Facility CSS Starts **********/
+.facilities-section {
+	background-color: #161616;
+	color: white;
+}
+
 .facility {
 	width: 100%;
-	background-color: #fff;
-	border: 1px solid #FF5722;
+	background-color: gray;
+	border: 1px solid black;
+	border-radius: .5em;
 }
 
 .facilities {
@@ -289,8 +338,8 @@ ul.topper li div p {
 
 .facility .heading {
 	padding: 10px;
-	color: #fff;
-	background: #FF5722;
+	color: #ffffff;
+	background: #000000;
 	text-align: center;
 	font-size: 18px;
 	font-weight: 400;
@@ -301,8 +350,9 @@ ul.topper li div p {
 	width: 100%;
 	transition: transform 150ms ease-in;
 }
-.facility img:hover{
-	transform: scale(1.03);
+
+.facility img:hover {
+	transform: scale(1.01);
 }
 
 .facility-list {
@@ -316,17 +366,24 @@ ul.topper li div p {
 
 /********** My School Facility CSS Ends **********/
 /********** School Gallery CSS Starts **********/
+#gallery {
+	background-color: #161616;
+	color: white;
+}
+
 .gallery img {
 	margin-bottom: 20px;
-	border: 7px double #66BB6A;
-	border-radius: 10px;
+	border: 4px solid skyblue;
+	border-radius: .5em;
 	width: 100%;
 	transition: transform 150ms ease-in;
 }
-.gallery img:hover{
+
+.gallery img:hover {
 	transform: scale(1.02)
 }
-.gallery-images{
+
+.gallery-images {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 20px;
@@ -338,18 +395,18 @@ ul.topper li div p {
 /********** Footer CSS Starts **********/
 
 .footer {
-	background-color: #0f0d0c;
+	background-color: #000000;
 	padding: 40px 0px 0px 0px;
 	width: 100%;
 	float: left;
 }
 
-.footer > .footer-links{
+.footer>.footer-links {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 20px;
 	padding: 20px;
-    place-items: center;
+	place-items: center;
 	margin: 30px auto 20px 10px;
 }
 
@@ -372,7 +429,8 @@ ul.topper li div p {
 	float: left;
 	list-style: none;
 }
-.footer-inner .social-links{
+
+.footer-inner .social-links {
 	display: flex;
 	padding: 3px;
 	margin-bottom: 10px;
@@ -397,7 +455,7 @@ ul.topper li div p {
 	padding-top: 30px;
 }
 
-.copyright p{
+.copyright p {
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -408,47 +466,61 @@ ul.topper li div p {
 
 @media (max-width: 510px) {
 
-	.navbar .navItems a, .navbar .navItems p{
+	.navbar .navItems a,
+	.navbar .navItems p {
 		display: none;
 	}
-	.news{
-		padding: 10px;
+
+	.news {
+		padding: 12px;
 	}
+	.news b{
+		padding: 12px;
+	}
+
 	.about-us {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
 	}
-	.heading{
+
+	.heading {
 		font-size: 20px;
 	}
+
 	.heading:after {
 		right: 42%;
 		width: 12%;
 	}
+
 	.about-us img {
 		width: 100%;
 		height: auto;
 		margin-top: 40px;
 	}
-	.footer > .footer-links{
+
+	.footer>.footer-links {
 		place-items: unset;
 	}
-	.footer-top{
+
+	.footer-top {
 		padding-left: 10px;
 	}
-	.footer-inner .social-links{
+
+	.footer-inner .social-links {
 		justify-content: flex-start;
 		margin-left: 10px;
 	}
-  }
+}
+
 @media (min-width: 510px) {
 
-	nav.mobile-menu{
+	nav.mobile-menu {
 		display: none;
 	}
-	i.fa-bars{
+
+	i.fa-bars {
 		display: none;
 	}
-  }
+}
