@@ -470,12 +470,16 @@ ul.topper li div p {
 	.navbar .navItems p {
 		display: none;
 	}
+	.slider, .slider img{
+		height: 60vh;
+		object-fit: cover;
+	}
 
 	.news {
 		padding: 12px;
 	}
 	.news b{
-		padding: 12px;
+		padding: 7px;
 	}
 
 	.about-us {
